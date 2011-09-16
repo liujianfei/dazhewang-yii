@@ -3,6 +3,9 @@ body,div,a,img,p,ul,li {
 	padding:0;
 	border:0;
 }
+ul li{
+	list-style:none;
+}
 a {
 	color:#333;
 	text-decoration:none;
@@ -263,6 +266,12 @@ a:hover {
 	overflow:hidden;
 }
 /*彩信*/
+.main0 ul{
+	display:none;
+}
+.main0 .block{
+	display:block;
+}
 .cx-box{
 	margin-top:10px;
 	position:relative;
@@ -575,8 +584,6 @@ a:hover {
 	background:url(../images/open.png) no-repeat 10px 5px;
 }
 .sliderbox .title .right {
-	display:inline;
-	height:20px;
 	width:130px;
 	overflow:hidden;
 	float:left;
@@ -585,7 +592,7 @@ a:hover {
 .sliderbox .content {
 	display:none;
 	padding:5px;
-	height:115px;
+	height:125px;
 	width:250px;
 	border-bottom:1px solid #CCC;
 }

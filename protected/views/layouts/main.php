@@ -14,6 +14,7 @@
     <script src="js/jquery-1.4a2.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="js/right.jquery.js"></script>
     <script src="js/jquery.imgmarquee.js" type="text/javascript"></script>
+    <script src="js/tab.js" type="text/javascript"></script>
     <script type="text/javascript">
 		$(function () {
 			$("#img-marquee").d_imagechange({
@@ -46,7 +47,9 @@
 				width: 530,
 				height: 230,
 				playTime: 5000});});
+				
 	</script>
+    
 </head>
 <body>
 <div id="top">
@@ -123,40 +126,79 @@
         	<div class="tg-title"/>彩信优惠劵</div>
             <div class="tg-box">
                 <div class="title">
-                    <ul class="tg-nav">
-                        <li><a class="active" href="#">餐饮</a></li>
-                        <li><a href="#">购物</a></li>
-                        <li><a href="#">服务</a></li>
-                        <li><a href="#">娱乐</a></li>
+                    <ul class="tg-nav" id="menu0" >
+                        <li><a onclick="setTab(0,0)" class="active" href="javascript:void(0)">餐饮</a></li>
+                        <li><a onclick="setTab(0,1)" href="javascript:void(0)">购物</a></li>
+                        <li><a onclick="setTab(0,2)" href="javascript:void(0)">服务</a></li>
+                        <li><a onclick="setTab(0,3)" href="javascript:void(0)">娱乐</a></li>
                     </ul>
                 </div>
-                <div class="cx-cont">
-                    <a href="#"><img src="images/caixin-1.jpg" alt="img" /></a>
-                    <span class="address">地址：东方大街2203号</span><a class="map" href="#">地图</a>
+                <div class="main0" id="main0">
+                <ul class="block"><li>
+                    <div class="cx-cont">
+                        <a href="#"><img src="images/caixin-1.jpg" alt="img" /></a>
+                        <span class="address">地址：东方大街2203号</span><a class="map" href="#">地图</a>
+                    </div>
+                    <div class="cx-cont">
+                        <a href="#"><img src="images/caixin-2.jpg" alt="img" /></a>
+                        <span class="address">地址：东方大街2203号</span><a class="map" href="#">地图</a>
+                    </div>
+                    <div class="cx-cont" style=" border:0px;">
+                        <a href="#"><img src="images/caixin-3.jpg" alt="img" /></a>
+                        <span class="address">地址：东方大街2203号</span><a class="map" href="#">地图</a>
+                    </div>
+                    <div style="clear:both;"></div>
+                </li></ul>
+                <ul><li>
+                    <div class="cx-cont">
+                        <a href="#"><img src="images/caixin-1.jpg" alt="img" /></a>
+                        <span class="address">地址：东方大街2203号</span><a class="map" href="#">地图</a>
+                    </div>
+                    <div class="cx-cont">
+                        <a href="#"><img src="images/caixin-2.jpg" alt="img" /></a>
+                        <span class="address">地址：东方大街2203号</span><a class="map" href="#">地图</a>
+                    </div>
+                    <div style="clear:both;"></div>
+                </li></ul>
+                <ul><li>
+                    <div class="cx-cont">
+                        <a href="#"><img src="images/caixin-1.jpg" alt="img" /></a>
+                        <span class="address">地址：东方大街2203号</span><a class="map" href="#">地图</a>
+                    </div>
+                    <div class="cx-cont" style=" border:0px;">
+                        <a href="#"><img src="images/caixin-3.jpg" alt="img" /></a>
+                        <span class="address">地址：东方大街2203号</span><a class="map" href="#">地图</a>
+                    </div>
+                    <div style="clear:both;"></div>
+                </li></ul>
+                <ul><li>
+                    <div class="cx-cont">
+                        <a href="#"><img src="images/caixin-2.jpg" alt="img" /></a>
+                        <span class="address">地址：东方大街2203号</span><a class="map" href="#">地图</a>
+                    </div>
+                    <div class="cx-cont" style=" border:0px;">
+                        <a href="#"><img src="images/caixin-3.jpg" alt="img" /></a>
+                        <span class="address">地址：东方大街2203号</span><a class="map" href="#">地图</a>
+                    </div>
+                    <div style="clear:both;"></div>
+                    </li></ul>
                 </div>
-                <div class="cx-cont">
-                    <a href="#"><img src="images/caixin-2.jpg" alt="img" /></a>
-                    <span class="address">地址：东方大街2203号</span><a class="map" href="#">地图</a>
                 </div>
-                <div class="cx-cont" style=" border:0px;">
-                    <a href="#"><img src="images/caixin-3.jpg" alt="img" /></a>
-                    <span class="address">地址：东方大街2203号</span><a class="map" href="#">地图</a>
-                </div>
-                <div style="clear:both;"></div>
-            </div>
             </div>
             <div class="cx-box">
             	<div class="tg-title"/>团购</div>
             <div class="tg-box">
                 <div class="title">
-                    <ul class="tg-nav">
-                        <li><a class="active" href="#">餐饮</a></li>
-                        <li><a href="#">购物</a></li>
-                        <li><a href="#">服务</a></li>
-                        <li><a href="#">娱乐</a></li>
+                    <ul class="tg-nav" id="menu1">
+                        <li><a onmouseover="setTab(1,0)" class="active" href="javascript:void(0)">餐饮</a></li>
+                        <li><a onmouseover="setTab(1,1)" href="javascript:void(0)">购物</a></li>
+                        <li><a onmouseover="setTab(1,2)" href="javascript:void(0)">服务</a></li>
+                        <li><a onmouseover="setTab(1,3)" href="javascript:void(0)">娱乐</a></li>
                     </ul>
                 </div>
-                <div class="tg-cont" style="margin-left:5px;">
+                <div class="main0" id="main1">
+                <ul class="block"><li>
+                    <div class="tg-cont" style="margin-left:5px;">
                     <img class="city" src="images/city-1.png" alt="img" />
                     <span class="price_a">
                         <span class="a">￥45</span>
@@ -165,9 +207,7 @@
                     </span>
                     <span class="link_img"><img src="images/tg-1.jpg" width="134" height="119" alt="img" /></span>
                     <span class="text">【好利来蛋糕】原价120，现在只需50元</span>
-                    <span class="price_b">
-                        原价：￥ 90000<br />
-                        现价：￥ 45<br />
+                    <span class="price_b">原价：￥ 90000<br />现价：￥ 45<br />
                         <a href="#">购买</a>
                     </span>
                     <div class="content_bottom">
@@ -186,9 +226,7 @@
                     </span>
                     <span class="link_img"><img src="images/tg-2.jpg" width="134" height="119" alt="img" /></span>
                     <span class="text">【好利来蛋糕】原价120，现在只需50元</span>
-                    <span class="price_b">
-                        原价：￥ 90000<br />
-                        现价：￥ 45<br />
+                    <span class="price_b">原价：￥ 90000<br />现价：￥ 45<br />
                         <a href="#">购买</a>
                     </span>
                     <div class="content_bottom">
@@ -207,9 +245,7 @@
                     </span>
                     <span class="link_img"><img src="images/tg-1.jpg" width="134" height="119" alt="img" /></span>
                     <span class="text">【好利来蛋糕】原价120，现在只需50元</span>
-                    <span class="price_b">
-                        原价：￥ 90000<br />
-                        现价：￥ 45<br />
+                    <span class="price_b">原价：￥ 90000<br />现价：￥ 45<br />
                         <a href="#">购买</a>
                     </span>
                     <div class="content_bottom">
@@ -219,6 +255,183 @@
                     </div>
                 </div>
                 <div style="clear:both;"></div>
+                </li></ul>
+                <ul><li>
+                <div class="tg-cont" style="margin-left:5px;">
+                    <img class="city" src="images/city-1.png" alt="img" />
+                    <span class="price_a">
+                        <span class="a">￥45</span>
+                        <span class="b">5</span>
+                        <span class="c">折</span>
+                    </span>
+                    <span class="link_img"><img src="images/tg-1.jpg" width="134" height="119" alt="img" /></span>
+                    <span class="text">【好利来蛋糕】原价120，现在只需50元</span>
+                    <span class="price_b">原价：￥ 90000<br />现价：￥ 45<br />
+                        <a href="#">购买</a>
+                    </span>
+                    <div class="content_bottom">
+                        <span class="a">0天14小时2分14秒</span>
+                        <span class="b">565</span>
+                        <span class="c">人已经购买</span>
+                    </div>
+                </div>
+                
+                <div class="tg-cont">
+                    <img class="city" src="images/city-1.png" alt="img" />
+                    <span class="price_a">
+                        <span class="a">￥45</span>
+                        <span class="b">5</span>
+                        <span class="c">折</span>
+                    </span>
+                    <span class="link_img"><img src="images/tg-2.jpg" width="134" height="119" alt="img" /></span>
+                    <span class="text">【好利来蛋糕】原价120，现在只需50元</span>
+                    <span class="price_b">原价：￥ 90000<br />现价：￥ 45<br />
+                        <a href="#">购买</a>
+                    </span>
+                    <div class="content_bottom">
+                        <span class="a">0天14小时2分14秒</span>
+                        <span class="b">565</span>
+                        <span class="c">人已经购买</span>
+                    </div>
+                </div>
+                
+                <div class="tg-cont">
+                    <span class="price_a">
+                        <span class="a">￥45</span>
+                        <span class="b">5</span>
+                        <span class="c">折</span>
+                    </span>
+                    <span class="link_img"><img src="images/tg-1.jpg" width="134" height="119" alt="img" /></span>
+                    <span class="text">【好利来蛋糕】原价120，现在只需50元</span>
+                    <span class="price_b">原价：￥ 90000<br />现价：￥ 45<br />
+                        <a href="#">购买</a>
+                    </span>
+                    <div class="content_bottom">
+                        <span class="a">0天14小时2分14秒</span>
+                        <span class="b">565</span>
+                        <span class="c">人已经购买</span>
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+                </li></ul>
+                <ul><li>
+                <div class="tg-cont" style="margin-left:5px;">
+                    <img class="city" src="images/city-1.png" alt="img" />
+                    <span class="price_a">
+                        <span class="a">￥45</span>
+                        <span class="b">5</span>
+                        <span class="c">折</span>
+                    </span>
+                    <span class="link_img"><img src="images/tg-1.jpg" width="134" height="119" alt="img" /></span>
+                    <span class="text">【好利来蛋糕】原价120，现在只需50元</span>
+                    <span class="price_b">原价：￥ 90000<br />现价：￥ 45<br />
+                        <a href="#">购买</a>
+                    </span>
+                    <div class="content_bottom">
+                        <span class="a">0天14小时2分14秒</span>
+                        <span class="b">565</span>
+                        <span class="c">人已经购买</span>
+                    </div>
+                </div>
+                
+                <div class="tg-cont">
+                    <img class="city" src="images/city-1.png" alt="img" />
+                    <span class="price_a">
+                        <span class="a">￥45</span>
+                        <span class="b">5</span>
+                        <span class="c">折</span>
+                    </span>
+                    <span class="link_img"><img src="images/tg-2.jpg" width="134" height="119" alt="img" /></span>
+                    <span class="text">【好利来蛋糕】原价120，现在只需50元</span>
+                    <span class="price_b">原价：￥ 90000<br />现价：￥ 45<br />
+                        <a href="#">购买</a>
+                    </span>
+                    <div class="content_bottom">
+                        <span class="a">0天14小时2分14秒</span>
+                        <span class="b">565</span>
+                        <span class="c">人已经购买</span>
+                    </div>
+                </div>
+                
+                <div class="tg-cont">
+                    <img class="city" src="images/city-1.png" alt="img" />
+                    <span class="price_a">
+                        <span class="a">￥45</span>
+                        <span class="b">5</span>
+                        <span class="c">折</span>
+                    </span>
+                    <span class="link_img"><img src="images/tg-1.jpg" width="134" height="119" alt="img" /></span>
+                    <span class="text">【好利来蛋糕】原价120，现在只需50元</span>
+                    <span class="price_b">原价：￥ 90000<br />现价：￥ 45<br />
+                        <a href="#">购买</a>
+                    </span>
+                    <div class="content_bottom">
+                        <span class="a">0天14小时2分14秒</span>
+                        <span class="b">565</span>
+                        <span class="c">人已经购买</span>
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+                </li></ul>
+                <ul><li>
+                <div class="tg-cont" style="margin-left:5px;">
+                    <img class="city" src="images/city-1.png" alt="img" />
+                    <span class="price_a">
+                        <span class="a">￥45</span>
+                        <span class="b">5</span>
+                        <span class="c">折</span>
+                    </span>
+                    <span class="link_img"><img src="images/tg-1.jpg" width="134" height="119" alt="img" /></span>
+                    <span class="text">【好利来蛋糕】原价120，现在只需50元</span>
+                    <span class="price_b">原价：￥ 90000<br />现价：￥ 45<br />
+                        <a href="#">购买</a>
+                    </span>
+                    <div class="content_bottom">
+                        <span class="a">0天14小时2分14秒</span>
+                        <span class="b">565</span>
+                        <span class="c">人已经购买</span>
+                    </div>
+                </div>
+                
+                <div class="tg-cont">
+                    <img class="city" src="images/city-1.png" alt="img" />
+                    <span class="price_a">
+                        <span class="a">￥45</span>
+                        <span class="b">5</span>
+                        <span class="c">折</span>
+                    </span>
+                    <span class="link_img"><img src="images/tg-2.jpg" width="134" height="119" alt="img" /></span>
+                    <span class="text">【好利来蛋糕】原价120，现在只需50元</span>
+                    <span class="price_b">原价：￥ 90000<br />现价：￥ 45<br />
+                        <a href="#">购买</a>
+                    </span>
+                    <div class="content_bottom">
+                        <span class="a">0天14小时2分14秒</span>
+                        <span class="b">565</span>
+                        <span class="c">人已经购买</span>
+                    </div>
+                </div>
+                
+                <div class="tg-cont">
+                    <span class="price_a">
+                        <span class="a">￥45</span>
+                        <span class="b">5</span>
+                        <span class="c">折</span>
+                    </span>
+                    <span class="link_img"><img src="images/tg-1.jpg" width="134" height="119" alt="img" /></span>
+                    <span class="text">【好利来蛋糕】原价120，现在只需50元</span>
+                    <span class="price_b">原价：￥ 90000<br />现价：￥ 45<br />
+                        <a href="#">购买</a>
+                    </span>
+                    <div class="content_bottom">
+                        <span class="a">0天14小时2分14秒</span>
+                        <span class="b">565</span>
+                        <span class="c">人已经购买</span>
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+                </li></ul>
+                </div>
                 </div>
             </div>
             <div class="banner">
@@ -374,7 +587,7 @@
       </div>
 <!--content-l-->
       <div class="content-r">
-      <?php $this->widget('widget.MemberActive');?>
+      <?php $this->widget('widget.MemberActive'); ?>
     <div class="clear"></div>
     <div class="right-photo">
     	<img src="images/jpg-8.jpg" width="250" height="166" alt="广告" />

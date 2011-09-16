@@ -1,9 +1,9 @@
 <div class="banner-title" style="margin:0px;">
-	<span>会员活动</span><a href="#">更多&gt;</a>
+	<span>会员活动</span><a href="<?php ?>">更多&gt;</a>
 </div>
 <div id="col">
 	<div class="sliderbox">
-		<?php foreach($actives as $active): ?>
+		<?php foreach($actives as $key=>$active): ?>
 		<div class="slider" status="close">
 			<div class="title">
 				<span class="left">【<?php echo $categorys[$active->id]->name; ?>】</span>
