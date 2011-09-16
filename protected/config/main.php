@@ -40,10 +40,10 @@ return array(
 		),
 		*/
 		'db'=>array(
-			'connectionString' => 'mysql:host=192.168.1.252;dbname=dazhewang-yii',
+			'connectionString' => 'mysql:host=localhost;dbname=dazhewang-yii',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => 'ubuntumysql',
+			'password' => '',
 			'charset' => 'utf8',
 			'tablePrefix' => 'dazhewang_',
 		),

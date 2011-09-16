@@ -54,11 +54,11 @@ class Active extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('sort, status, preview', 'required'),
+			array('desc, sort, status, preview', 'required'),
 			array('sort, status, preview', 'numerical', 'integerOnly'=>true),
 			array('title, start_time', 'length', 'max'=>20),
 			array('category_id, begin_time, end_time, update_time', 'length', 'max'=>10),
-			array('cover_img_small, cover_img_big', 'length', 'max'=>200),
+			array('desc, cover_img_small, cover_img_big', 'length', 'max'=>200),
 			array('cover_img_small, cover_img_big', 'FileValidator', 'types'=>'jpg, png, gif',
 				'wrongType'=>'只允许上传图片', 'maxSize'=>300 * 1024, 'tooLarge'=>'文件不能大于300K', 'message'=>'封面图片不能为空'),
 			array('address', 'length', 'max'=>100),
@@ -88,6 +88,7 @@ class Active extends CActiveRecord
 			'id' => 'ID',
 			'title' => 'Title',
 			'category_id' => 'Category',
+			'desc' => 'Desc',
 			'cover_img_small' => 'Cover Img Small',
 			'cover_img_big' => 'Cover Img Big',
 			'address' => 'Address',
