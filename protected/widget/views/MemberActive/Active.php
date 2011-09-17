@@ -18,7 +18,7 @@
 		?>
 		<div class="slider" status="<?php echo $status;?>">
 			<div class="title">
-				<span class="left <?php echo $key==1?'status="open"':'status="close"'; ?>">【<?php echo $categorys[$active->id]->name; ?>】</span>
+				<span class="left <?php echo $status;?>">【<?php echo $categorys[$active->id]->name; ?>】</span>
 				<span class="right"><?php echo $active->title; ?></span>
 			</div>
 			<div class="content" <?php if($status=="open"){
