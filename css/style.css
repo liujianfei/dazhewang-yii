@@ -584,6 +584,7 @@ a:hover {
 	background:url(../images/open.png) no-repeat 10px 5px;
 }
 .sliderbox .title .right {
+	height:20px;
 	width:130px;
 	overflow:hidden;
 	float:left;
